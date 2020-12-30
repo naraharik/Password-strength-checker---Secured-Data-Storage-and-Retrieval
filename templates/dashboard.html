@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<h1>Dashboard <small>Welcome {{session.username}}</small></h1>
+<br>
+<br>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Email id</th>
+      <th scope="col">User Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>{{data2.name.decode('ascii')}}</td>
+      <td>{{data2.emailid.decode('ascii')}}</td>
+      <td>{{data2.username.decode('ascii')}}</td>
+    </tr>
+  </tbody>
+</table>
+{% endblock %}
